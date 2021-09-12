@@ -42,24 +42,38 @@ Header
 
 -------------------------------- */
 header {
-  height: 170px;
-  line-height: 170px;
-  text-align: center;
+  height: 200px;
+  /* line-height: 50px; */
+  text-align: left;
   background: #ffffff;
 }
 header h1 {
+  text-align: center;
   font-size: 2.2rem;
   color: #363558;
+  padding: 25px 0px 0px 0px;
 }
+
+header p {
+  padding: 25px 30px 25px 30px;
+  font-size: 1rem;
+}
+
 @media only screen and (min-width: 600px) {
   header {
-    height: 200px;
-    line-height: 200px;
+    height: 400px;
+    /* line-height: 50px; */
   }
   header h1 {
+    padding: 50px 0px 0px 0px;
     font-size: 3rem;
   }
+  header p {
+    font-size: 2rem;
+    padding: 50px 150px 50px 150px;
+  }
 }
+
 
 /* -------------------------------- 
 
