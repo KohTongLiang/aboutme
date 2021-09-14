@@ -42,35 +42,53 @@ Header
 
 -------------------------------- */
 header {
-  height: 200px;
-  /* line-height: 50px; */
+  height: 25%;
   text-align: left;
   background: #ffffff;
 }
+
 header h1 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #363558;
-  padding: 25px 0px 0px 0px;
+  padding: 10% 0px 0px 0px;
 }
 
 header p {
-  padding: 25px 30px 25px 30px;
   font-size: 1rem;
+  padding: 5% 20% 15% 20%;
+}
+
+@media only scren and (min-width: 300px) {
+  header {
+    height: 25%;
+    text-align: left;
+    background: #ffffff;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #363558;
+    padding: 10% 0px 0px 0px;
+  }
+  
+  header p {
+    font-size: 1.05rem;
+    padding: 5% 20% 15% 20%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   header {
-    height: 400px;
-    /* line-height: 50px; */
+    height: 25%;
   }
   header h1 {
-    padding: 50px 0px 0px 0px;
+    padding: 10% 0px 0px 0px;
     font-size: 3rem;
   }
   header p {
-    font-size: 2rem;
-    padding: 50px 150px 50px 150px;
+    font-size: 1.95rem;
+    padding: 5% 20% 15% 20%;
   }
 }
 
@@ -81,7 +99,7 @@ Main content
 
 -------------------------------- */
 .cd-main {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .cd-main::before {
   /* never visible - this is used in jQuery to check the current MQ */
