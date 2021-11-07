@@ -12,57 +12,47 @@
 </head>
 <body>
 	<div class="cd-fold-content single-page">
-		<h2>Card Detection with PiCamera</h2>
+		<h2>RPI Card Detection</h2>
 		<em>Aug 2021 - Oct 2021</em>
-		<p>
-			This project involves the usage of Raspberry pi4 as a component in a system to perform object detection tasks. The aim of the tasks 
-			is to detect cards that would be scattered about tagged onto black boxes. Once the label is detected, the 
-			raspberry pi conveys the information to other parts of the system which are in charge of other tasks. The overall system 
-			is an autonomous robot which will traverse a given arena to each obstacles which will be tagged with a card. An 
-			android device will be used to setup a virtual environment where the best route would be plot and the robot will execute the 
-			movement information sent to it. My responsibility lies in training a Object Detection model which will run on the raspberry pi 4 
-			to gather IDs from labels detected.
-		</p>
-		<p>
-			The dataset given consist of 31 images and image augmentation has to be performed to increase the size of the dataset as well as cater 
-			to different environmental conditions such as lighting. After image augmentation is performed, the dataset is fed to an efficient-net model 
-			for transfer learning using Tensorflow lite model maker. The tflite model will then be used in conjunction with OpenCV to display a bounding box 
-			and text. Examples:
-		</p>
-		<p>Link: <a href='/posts/MDP_post.html' target="_blank">Read More</a></p>
+		<ul class="points">
+			<li>Object Detection tasks using RPI4 and PiCamera</li>
+			<li>Train a model to detect a small pool of cards with characters printed on them</li>
+			<li>Performed Image augmentation to increase dataset size, prevent overfitting and ensure model performs well under different lighting conditions.</li>
+			<li>Export model as tensor-flow lite model to have it run on the Raspberry Pi.</li>
+			<li>Communicate with labels to external components of the system to accomplish overall tasks.</li>
+			<li>Link: <a href='/posts/MDP_post.html' target="_blank">Read More</a></li>
+		</ul>
 		<br/>
 		<h2>OCR Notes</h2>
 		<em>Jul 2020 - Dec 2020</em>
-		<p>
-			The main objective behind OCR Notes is to make note taking faster and easier. Notes recorded simple by
-			snapping a photo and allowing the application to process it. Optionally, images containing paragraphs
-			of notes may be uploaded to be recorded. This project also serves as a familiarisation project for me
-			to learn more about React and how to integrate external libraries into it. Further improvements and
-			features will be included in the future.
-
-			An off-the-shelf library is used to perform the OCR tasks - Tesseract.js
-		</p>
+		<ul class="points">
+			<li>Simple note taking application that aims to speed up note-taking process during lectures using OCR</li>
+			<li>The main concept is to enable user to take a snaphot of notes or slides and have the application translate them to text form.</li>
+			<li>Used Tesseract.js to perform the tasks</li>
+			<li>Application is built with ReactJS and Material-UI framework.</li>
+			<li>Currently hosted on firebase.</li>
+		</ul>
 		<p>Link: <a href='https://ocrnotes.web.app/' target="_blank">https://ocrnotes.web.app/</a></p>
 		<br/>
 		<h2>Map.sg</h2>
 		<em>Aug 2020 - Nov 2020</em>
-		<p>
-			Developed as part of an academic group project to experience basic software development lifecycles.
-			Built with React + Redux, using Firestore and Firebase Authentication as well as external APIs from
-			Mapbox, Datamall, GovTech.
-		</p>
+		<ul class="points">
+			<li>Turn-by-turn driving companion with localised information</li>
+			<li>Provide live traffic images.</li>
+			<li>Tracks history of routes taken by the user and allows bookmarking to save frequent routes.</li>
+			<li>Application is built with ReactJS and Material-UI framework </li>
+			<li>Currently hosted on firebase.</li>
+		</ul>
 		<p>Link: <a href='https://cz2006-4bb77.web.app/' target="_blank">https://cz2006-4bb77.web.app/</a></p>
 		<br/>
 		<h2>SPade</h2>
 		<em>Apr 2016 – Aug 2016</em>
-		<p>
-			SPade is a short form for SP Web Auto Grading System. It was developed as a Final Year Project for
-			me and four other team members. The system automatically grades practical assignments set by lecturers
-			for students. Students submit source code for the system to grade. The system grades output produced
-			by the submitted code and compares it with an output produced by test cases. A grade is returned based 
-			on the number of test cases passed. The system aims to automate practical sessions conducted by
-			lecturers in school and makes learning programming more smooth.
-		</p>
+		<ul class="points">
+			<li>Developed as part of a Final Year Project in Singapore Polytechnic.</li>
+			<li>Full name stands for SP Web Auto Grading System.</li>
+			<li>Platform which serves to allow lecturers to design and set programming assignment questions.</li>
+			<li>Users would upload completed script to be compiled and have its output verified against test cases set by lecturers.</li>
+		</ul>
 	</div>
 </body>
 <script src="/js/jquery-2.1.1.js"></script>

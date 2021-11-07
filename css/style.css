@@ -59,6 +59,10 @@ header p {
   padding: 5% 20% 15% 20%;
 }
 
+li {
+  font-size: 1rem;
+}
+
 @media only scren and (min-width: 300px) {
   header {
     height: 25%;
@@ -76,6 +80,10 @@ header p {
     font-size: 1.05rem;
     padding: 5% 20% 15% 20%;
   }
+
+  li {
+    font-size: 1.05rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -90,6 +98,9 @@ header p {
     font-size: 1.95rem;
     padding: 5% 20% 15% 20%;
   }
+  li {
+    font-size: 1.95rem;
+  }
 }
 
 
@@ -98,6 +109,20 @@ header p {
 Main content
 
 -------------------------------- */
+.paragraphs {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 30%;
+  width: 30%;
+}
+
+.points {
+  padding-left: 5%;
+}
+
 .cd-main {
   /* overflow-x: hidden; */
 }
