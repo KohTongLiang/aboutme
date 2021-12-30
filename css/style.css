@@ -27,6 +27,15 @@ h1, h2 {
   font-family: "Vollkorn", serif;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -34,6 +43,17 @@ Patterns - reusable parts of our design
 -------------------------------- */
 .overflow-hidden {
   overflow: hidden;
+}
+
+.header_content {
+  /* position: absolute; */
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 /* -------------------------------- 
@@ -45,12 +65,16 @@ header {
   height: 25%;
   text-align: left;
   background: #ffffff;
+  color: #ffffff;
+  background-image: url('../img/background.jpg');
+  
+  /* background-image: url('/img/background.jpg') center no-repeat; */
+	background-size: cover;
 }
 
 header h1 {
   text-align: center;
   font-size: 2rem;
-  color: #363558;
   padding: 10% 0px 0px 0px;
 }
 
@@ -59,16 +83,20 @@ header p {
   padding: 5% 20% 15% 20%;
 }
 
+li {
+  font-size: 1rem;
+}
+
 @media only scren and (min-width: 300px) {
   header {
     height: 25%;
     text-align: left;
     background: #ffffff;
+    color: #ffffff;
   }
   header h1 {
     text-align: center;
     font-size: 2.2rem;
-    color: #363558;
     padding: 10% 0px 0px 0px;
   }
   
@@ -76,11 +104,16 @@ header p {
     font-size: 1.05rem;
     padding: 5% 20% 15% 20%;
   }
+
+  li {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   header {
     height: 25%;
+    color: #ffffff;
   }
   header h1 {
     padding: 10% 0px 0px 0px;
@@ -90,6 +123,9 @@ header p {
     font-size: 1.95rem;
     padding: 5% 20% 15% 20%;
   }
+  li {
+    font-size: 1.65rem;
+  }
 }
 
 
@@ -98,6 +134,20 @@ header p {
 Main content
 
 -------------------------------- */
+.paragraphs {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 30%;
+  width: 30%;
+}
+
+.points {
+  padding-left: 5%;
+}
+
 .cd-main {
   /* overflow-x: hidden; */
 }
