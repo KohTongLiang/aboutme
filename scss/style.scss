@@ -29,6 +29,11 @@ body {
 	background-color: $color-5;
 }
 
+.profile_pic {
+	border-radius: 50%;
+	align-self: center;
+}
+
 a {
 	color: $color-2;
 	text-decoration: none;
