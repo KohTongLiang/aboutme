@@ -27,15 +27,20 @@
 			<img src='./img/ar2.png'/>
 			<img src='./img/ar3.png'/>
 		</p>
+		<p>
+			<img src='./img/imageediting.gif'/>
+		</p>
 		<br/>
 		<!-- End of AR Project -->
 
 		<!-- FYP -->
-		<h2>Real life to Anime image translation and editing using StyleGAN2</h2>
+		<h2>Face Cartoonization using Generative Adversarial Network</h2>
 		<em>May 2021 - May 2022</em>
 		<ul class="points">
 			<li>Fine-tuning StyleGAN2 architecture to perform image to image translation.</li>
-			<li>Design multiple feature-based discriminators to improve quality of translated images.</li>
+			<li>Done pre-processing and face alignment to remove poor quality training images.</li>
+			<li>Designed and implemented a feature-based multi-discriminator architecture.</li>
+			<li>Adopt transfer learning technique to reduce training time and computational cost.</li>
 			<li>Employ closed-form factorisation to perform image editing.</li>
 			<li>Make use of Knowledge Distillation to perform model compression.</li>
 			<li>Some samples: </li>
@@ -54,8 +59,8 @@
 		<em>Aug 2021 - Oct 2021</em>
 		<ul class="points">
 			<li>Card detection and idendification tasks.</li>
-			<li>Overall objective is to have an autonomous robot travel the arena and stop infront of designated obstacles for card identification.</li>
-			<li>Trained a model to detect a small pool of cards with characters printed on them</li>
+			<li>Overall objective was to have a semi-autonomous robot travel the arena and stop infront of designated obstacles for card identification.</li>
+			<li>Trained a model via transfer learning to detect a small pool of cards with characters printed on them</li>
 			<li>Performed Image augmentation to increase dataset size, prevent overfitting and ensure model performs well under different lighting conditions.</li>
 			<li>Export model as tensor-flow lite model to have it run on the Raspberry Pi.</li>
 			<li>Communicate labels to an external Android device via bluetooth accomplish overall tasks.</li>
