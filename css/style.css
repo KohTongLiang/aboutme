@@ -144,6 +144,11 @@ img {
   width: 30%;
 }
 
+img.animated-gif {
+  height: 100%;
+  width: 100%;
+}
+
 .points {
   padding-left: 5%;
 }
